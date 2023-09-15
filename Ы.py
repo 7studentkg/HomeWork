@@ -192,38 +192,27 @@
     # print(f'Гласных: {gl}')
     # print(f'Процент Гласных: {round(gl / s * 100, 2)}; Процент Согласных: {round(sogl / s * 100, 2)}')
 
-# a = 1
-#
-# while a :
-    # list_error = '!@#$%^&*()_+=-/|\?<>:;`~,.'
-    # password = input('creat a password: ')
-    # if len(password) < 8 :
-        # print('password must be 8 characters long')
-    # if not password.isalnum():
-        # print('password must contain letters and numbers')
-#
-    # num = 0
-    # let = ''
-#
-    # for i in password :
-        # if i in list_error :
-            # print('password must not contain: "!@#$%^&*()_+=-/|?<>:;`~,."')
-#
-        # if i.isnumeric():
-            # num += int(i)
-        # else:
-            # let += i
-#
-    # print(num, let)
-#
+a = 1
 
-class User(object):
-    def __init__(self, name):
-        self.__name = name
+while a :
+    list_error = '!@#$%^&*()_+=-/|\?<>:;`~,.'
+    password = input('creat a password: ')
+    if len(password) < 8 :
+        print('password must be 8 characters long')
+    if not password.isalnum():
+        print('password must contain letters and numbers')
 
-        def __str__ (self):
-            return str(self.__name)
+    num = 0
+    let = ''
 
-user = User ('Oleg')
+    for i in password :
+        if i in list_error :
+            print('password must not contain: "!@#$%^&*()_+=-/|?<>:;`~,."')
 
-print(user)
+        if i.isnumeric():
+            num += int(i)
+        else:
+            let += i
+
+    print(num, let)
+#
