@@ -42,6 +42,7 @@ teacher = Teacher("Bekmuratov Adil ", 35, 9, 'No')
 teacher.introduce_myself()
 print(f'Salary: {teacher.bonus_salary()} som\n')
 
+
 def create_students():
     student_1 = Student('Adilet', 18, marks={'Math': 5, 'History': 3, 'English': 5, 'Biology': 3})
     student_2 = Student('Din Winchester', 44, is_married= 'Yes', marks={'Math': 3, 'History': 4, 'English': 5, 'Biology': 3})
@@ -58,3 +59,5 @@ for student in students:
     for subject, mark in student.marks.items():
         print(f'{subject} - {mark}')
     print(f'GPA: {student.gpa()}\n')
+
+#commmm

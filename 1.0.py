@@ -254,6 +254,33 @@
 #
         # print(f'Процент гласных букв в слове: {round(count_gl / len(word) * 100 , 2)}')
         # print(f'Процент согласных букв в слове: {round(count_sogl / len(word) * 100 , 2)}')
+
+# version my students
+# while True:
+    # name = input('Слово: ')
+    # if name == 'stop' or name == 'стоп':
+        # print('exit...')
+        # break
+    # vowels = "аеиуыоэяюaeiouy"
+    # consonants = "йцкнгшщзхфвпрлджчсмтбqwrtpsdfghjklzxcvbnm"
+    # counter1 = 0
+    # counter2 = 0
+    # for i in name.lower():
+        # if i in vowels:
+            # counter1 += 1
+        # elif i in consonants:
+            # counter2 += 1
+        # else:
+            # print('Только слова состоящие из алфавита')
+    # summ = counter1 + counter2
+    # percent1 = round(counter1 / summ*100, 2)
+    # percent2 = round(counter2 / summ*100, 2)
+    # print(f'Количество букв: {summ} ')
+    # print(f'Гласных букв: {counter1}')
+    # print(f'Cогласных букв: {counter2}')
+    # print(f'Процент гласных букв: {percent1} ')
+    # print(f'Процент согласных букв: {percent2} ')
+#
 #
 # ⁡⁢⁣⁢4 ChatGPT⁡
 #

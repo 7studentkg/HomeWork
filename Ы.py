@@ -191,28 +191,150 @@
     # print(f'Согласных: {sogl}')
     # print(f'Гласных: {gl}')
     # print(f'Процент Гласных: {round(gl / s * 100, 2)}; Процент Согласных: {round(sogl / s * 100, 2)}')
-
-a = 1
-
-while a :
-    list_error = '!@#$%^&*()_+=-/|\?<>:;`~,.'
-    password = input('creat a password: ')
-    if len(password) < 8 :
-        print('password must be 8 characters long')
-    if not password.isalnum():
-        print('password must contain letters and numbers')
-
-    num = 0
-    let = ''
-
-    for i in password :
-        if i in list_error :
-            print('password must not contain: "!@#$%^&*()_+=-/|?<>:;`~,."')
-
-        if i.isnumeric():
-            num += int(i)
-        else:
-            let += i
-
-    print(num, let)
 #
+# list_error = '!@#$%^&*()_+=-/|\?<>:;`~,.' # это символы которые не допускаются оно еще не работает
+#
+# while True:
+    # password = input('creat a password: ')
+    # if password == 'stop': # специальное слово
+        # print("Goodbay")
+        # break
+    # if len(password) < 8 : # пароль должен содержать 8 символом или более
+        # print('password must be 8 characters long')
+#
+    # num = 0
+    # let = ''
+#
+    # for i in password :# тут мы перебераетм каждую буквы из пароля
+        # if i in list_error :
+            # print('password must not contain: "!@#$%^&*()_+=-/|?<>:;`~,."')
+#
+        # if i.isnumeric(): # этот метот отлавливает цифры из пароля вне зависимости что оно типа str
+            # num += int(i)
+        # elif i.isalpha: # Это буквы
+            # let += i
+#
+    # for i in list_error:
+        # if i in let:
+            # let.remove(i)
+#
+#
+#
+    # print(num)
+    # print(let)
+
+#
+# while True:
+    # name = input('Слово: ')
+    # if name == 'stop' or name == 'стоп':
+        # print('exit...')
+        # break
+    # vowels = "аеиуыоэяюaeiouy"
+    # consonants = "йцкнгшщзхфвпрлджчсмтбqwrtpsdfghjklzxcvbnm"
+    # counter1 = 0
+    # counter2 = 0
+    # for i in name.lower():
+        # if i in vowels:
+            # counter1 += 1
+        # elif i in consonants:
+            # counter2 += 1
+        # else:
+            # print('Только слова состоящие из алфавита')
+    # summ = counter1 + counter2
+    # percent1 = round(counter1 / summ*100, 2)
+    # percent2 = round(counter2 / summ*100, 2)
+    # print(f'Количество букв: {summ} ')
+    # print(f'Гласных букв: {counter1}')
+    # print(f'Cогласных букв: {counter2}')
+    # print(f'Процент гласных букв: {percent1} ')
+    # print(f'Процент согласных букв: {percent2} ')
+#
+# class Car:
+    # def __init__(self, model, year, color):
+        # self.__model = model
+        # self.__year = year
+        # self.__color = color
+#
+    # @property
+    # def model(self):
+        # return self.__model
+#
+    # @property
+    # def year(self):
+        # return self.__year
+#
+    # @property
+    # def color(self):
+        # return self.__color
+#
+    # @color.setter
+    # def color(self, value):
+        # self.__color = value
+#
+    # def drive(self):
+        # print(f'car: {self.__model} is driving')
+#
+    # def __str__(self):
+        # return f'MODEL: {self.__model}, YEAR: {self.__year}, COLOR: {self.__color} '
+#
+#
+# class FuelCar(Car):
+    # def __init__(self, model, year, color, fuel_bank):
+        # Car.__init__(self, model, year, color)
+        # self.__fuel_bank = fuel_bank
+#
+    # @property
+    # def fuel_bank(self):
+        # return self.__fuel_bank
+#
+    # def drive(self):
+    #    print(f'car: {self.__model} is driving by fuel')
+#
+    # def __str__(self):
+        # return super().__str__() + f' FUEL BANK: {self.__fuel_bank}'
+#
+# class ElectricCar(Car):
+    # def __init__(self, model, year, color, battery):
+        # Car.__init__(self, model, year, color)
+        # self.__battery = battery
+#
+    # @property
+    # def battery(self):
+        # return self.__battery
+#
+    # def drive(self):
+        # print(f'car: {self.__model} is driving by electricity')
+#
+    # def __str__(self):
+        # return super().__str__() + f'Battery BANK: {self.__battery}'
+#
+#
+# class HybridCar(FuelCar, ElectricCar):
+    # def __init__(self, model, year, color, fuel_bank, battery):
+        # FuelCar.__init__(self, model, year, color, fuel_bank)
+        # ElectricCar.__init__(self, model, year, color, battery)
+#
+#
+# some_car = Car('BMW X6', 2023, 'Black')
+# print(some_car)
+# nissan_car = FuelCar('Nissan Patrol', 2009, 'White', 10)
+# print(nissan_car)
+#
+# toyota_car = HybridCar('Prius',2023,'white', 45, 45000)
+# print(toyota_car)
+#
+
+
+
+add_result = 3 + 57
+sub_result = 342- 42
+mult_result = 3 * 5
+div_result = 555 / 1
+
+
+
+
+
+
+print( f'Add: {add_result}\nSub: {sub_result}\n\
+Mult: {mult_result}\nDiv: {div_result}')
