@@ -326,15 +326,63 @@
 
 
 
-add_result = 3 + 57
-sub_result = 342- 42
-mult_result = 3 * 5
-div_result = 555 / 1
+import random
 
+class Boss:
+    def __init__(self, name, health):
+        self.name = name
+        self.health = health
+        self.is_stunned = False
 
+    def take_damage(self, damage):
+        if not self.is_stunned:
+            self.health -= damage
 
+    def is_alive(self):
+        return self.health > 0
 
+    def stun(self):
+        self.is_stunned = True
 
+    def end_stun(self):
+        self.is_stunned = False
 
-print( f'Add: {add_result}\nSub: {sub_result}\n\
-Mult: {mult_result}\nDiv: {div_result}')
+class Hero:
+    def __init__(self, name, power):
+        self.name = name
+        self.power = power
+
+    def use_superpower(self, boss):
+        if not boss.is_stunned:
+            print(f"{self.name} использует супер силу!")
+            boss.stun()
+        else:
+            print(f"{self.name} не может использовать супер силу, так как босс уже вырублен!")
+
+def main():
+    boss = Boss("Злой Босс", 100)
+    hero = Hero("Супер Герой", 20)
+
+    while boss.is_alive():
+        # Герой атакует босса
+        damage = random.randint(10, 30)
+        print(f"{hero.name} атакует {boss.name} и наносит {damage} урона.")
+        boss.take_damage(damage)
+
+        # Если босс жив, он атакует героя
+        if boss.is_alive():
+            boss_damage = random.randint(5, 15)
+            print(f"{boss.name} атакует {hero.name} и наносит {boss_damage} урона.")
+        else:
+            print(f"{boss.name} был побежден!")
+
+        # Проверяем, вырублен ли босс
+        if boss.is_stunned:
+            boss.end_stun()
+            print(f"{boss.name} вырублен и не может действовать в этом раунде.")
+
+        # Герой использует супер силу
+        hero.use_superpower(boss)
+
+if __name__ == "__main__":
+    main()
