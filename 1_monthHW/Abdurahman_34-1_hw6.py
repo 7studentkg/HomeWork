@@ -9,6 +9,7 @@ def multiplication_number(*args):
         number *= i
     return number
 
+
 print(multiplication_number.__doc__)
 
 enternumber = input('Введите числа через пробел: ') # Однаразовая штука
@@ -25,6 +26,13 @@ def palindrome(word= "hello"):
     '''Палиндром (Palindrome) - Зеркальная строка, которая читается одинаково вперед и назад
 Пример: "дед", "шалаш"...'''
     word = word.lower()
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+
+def palindrome(word = 'Hello'):
+    word = word.replace('', '')
     if word == word[::-1]:
         return True
     else:

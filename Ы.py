@@ -323,3 +323,78 @@
 # toyota_car = HybridCar('Prius',2023,'white', 45, 45000)
 # print(toyota_car)
 #
+#
+# countries = {
+    # 'kg' : {'red', 'eyllow'},
+    # 'ru' : {'red', 'blue', 'white'},
+    # 'usa' : {'red', 'blue', 'white'},
+    # 'kz' : {'blue', 'eyllow'},
+    # 'tr' : {'red', 'white'}
+# }
+#
+# while 1:
+    # color = input('enter color: ').split()
+    # if color == 'exit':
+        # print('exit....')
+        # break
+    # found = False
+#
+    # for key, value in countries.items():
+        # for i in value :
+            # if color == i:
+    #
+#
+#countries = {
+#   'kg' : {'red', 'yellow'},
+#   'ru' : {'red', 'blue', 'white'},
+#   'usa' : {'red', 'blue', 'white'},
+#   'kz' : {'blue', 'yellow'},
+#   'tr' : {'red', 'white'}
+#}
+#
+#while True:
+#    color = input('Введите цвет: ').strip().lower()  # Приводим введенный цвет к нижнему регистру и убираем лишние пробелы
+#    if color == 'exit':
+#       print('Выход....')
+#       break
+#    countries_with_color = []  # Создаем список для хранения ключей (стран), у которых есть введенный цвет
+#    for country, colors_set in countries.items():
+#        if color in colors_set:
+#
+#            countries_with_color.append(country)
+#    if countries_with_color:
+#        for i in countries_with_color:
+#            print(i)
+#    else:
+#        print(f"Нет стран с цветом '{color}'")
+#countries = {
+#   'kg' : {'red', 'yellow'},
+#   'ru' : {'red', 'blue', 'white'},
+#   'usa' : {'red', 'blue', 'white'},
+#   'kz' : {'blue', 'yellow'},
+#   'tr' : {'red', 'white'}
+#}
+#
+#while True:
+#    colors = input('Введите цвета (разделите пробелом): ').lower().split()  # Добавил lower что привратить слово в нижний регистр
+#    if colors == 'exit':
+#        print('exit....')
+#        break
+#
+#    found_countries = []  # Создаем список для хранения стран
+#    for country, colors_set in countries.items(): # перебераем цилом
+#        if all(color in colors_set for color in colors):
+#    # any() это метод проверки которые проверяетэлемент, если хотябы один элемент является True то возвращаяет нам значения
+#            found_countries.append(country) # тут мы добовляем названия стран которых нашли
+#    if found_countries: # если он не пуст
+#        print(f"Страны с цветами '{', '.join(colors)}':")
+#        for country in found_countries: # выводим ключи в столбик
+#            print(country)
+#    else:
+#        print(f"Нет стран с цветами '{', '.join(colors)}'")
+#
+word = input(">>")
+if word == 'h':
+    print('HHHHHHHH')
+elif word == 'g':
+    print("GGGGGGGG")
