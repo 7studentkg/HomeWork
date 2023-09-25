@@ -9,7 +9,8 @@ def bubble_sort(bubble):
 
 bubble = [13, 3, 56, 0, 71, 96, 35, 8, 9, 27, 48, 82]
 bubble_sort(bubble)
-print(bubble)
+bubble_list = bubble
+print(bubble_list)
 
 
 
