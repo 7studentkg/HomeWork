@@ -122,9 +122,11 @@ if connection is not None:
     update_quantity(connection, (16, 14))
     update_price(connection, (75.83, 10))
     delete_products(connection, 11)
+
     select_products(connection)
     print('\n')
-    search_products(connection, 'Мыло') # тут немного по хардкодил, не смог сделать должным образом
+    search_products(connection, 'Мыло') # тут немного по хардкодил , не смог сделать должным образом
     print('\n')
     all_products(connection)
+
     connection.close()
