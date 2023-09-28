@@ -101,9 +101,7 @@ CREATE TABLE IF NOT EXISTS products(
 if connection is not None:
     print('Successfully')
 
-
     create_table(connection, sql_create_products_table)
-
 
     # additions_product(connection, ("Жидкое Мыло с запахом ванили", 123.99, 10))
     # additions_product(connection, ("Мыло детское", 90.50, 20))
