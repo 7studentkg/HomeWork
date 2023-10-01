@@ -393,8 +393,3 @@
 #    else:
 #        print(f"Нет стран с цветами '{', '.join(colors)}'")
 #
-word = input(">>")
-if word == 'h':
-    print('HHHHHHHH')
-elif word == 'g':
-    print("GGGGGGGG")
